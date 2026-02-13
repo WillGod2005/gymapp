@@ -1,0 +1,15 @@
+                 Table "app.food_generic"
+    Column     |  Type   | Collation | Nullable | Default 
+---------------+---------+-----------+----------+---------
+ fdc_id        | bigint  |           | not null | 
+ data_type     | text    |           |          | 
+ description   | text    |           |          | 
+ food_category | text    |           |          | 
+ kcal          | numeric |           |          | 
+ protein_g     | numeric |           |          | 
+ carbs_g       | numeric |           |          | 
+ fat_g         | numeric |           |          | 
+Indexes:
+    "food_generic_pkey" PRIMARY KEY, btree (fdc_id)
+    "idx_food_generic_desc_trgm" gin (description gin_trgm_ops)
+
