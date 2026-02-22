@@ -81,11 +81,6 @@ async function onSubmit(e) {
 
         <button type="submit">Create account</button>
       </form>
-
-      <div>
-        <button action= {navigate("/login", { replace: true })}>Login</button>
-      </div>
     </div>
-
   );
 }

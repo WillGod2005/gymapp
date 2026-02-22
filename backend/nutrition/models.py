@@ -13,7 +13,7 @@ class FoodGeneric(models.Model):
 
     class Meta:
         managed = False
-        db_table = "food_generic"
+        db_table = 'app"."food_generic'
 
 class FoodLog(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
